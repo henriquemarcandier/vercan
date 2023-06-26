@@ -1,66 +1,27 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Olá Pessoal da Vercan, sejam mais do que bem-vindos ao sistena de Teste do Henrique Marcandier.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+O site completo pode ser baixado em https://www.bhcommerce.com.br/vercan.zip.
 
-## About Laravel
+Baixem desse endereço pq aqui, não sei o pq, mas não vai todos os arquivos corretamente não.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Mas enfim, aí vcs baixam pra sua máquina aí e dezipem em uma pasta dentro do servidor web de vcs. Eu usei a pasta "vercan", mas vcs podem baixar pra qualquer pasta dentro do "htdocs" de vcs ou pasta similar.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Aí reparem que na raíz do projeto existe o arquivo "vercan.sql". Baixem esse arquivo dentro do mysqli de vcs, eu usei o bd "vercan", mas vcs podem usar o que desejarem aí.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Aí tem 2 arquivos que deve se configurar, visando o bom funcionamento do projeto. São eles, o '.env' da raíz da pasta, e o arquivo "connect.php" que está dentro da pasta "public", esse arquivo é para o funcionamento correto do ajax utilizado no site. Aí nesse arquivos tem as configuralçoes das pastas e do bd. Caso utilizem um nome diferente para a pasta e o bd é muito importante que se atentem na alteração das pastas e do bd.
 
-## Learning Laravel
+Aí é só executar o projeto aí, no caminho "http://localhost/vercan/public", no meu caso. Se vocês utilizarem uma pasta diferente se atentem para alterar esse endereço nos arquivos ".env" e "connect.php" para o funcionamento correto do sistema. 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Eu mexi basicamente no arquivo "web.php", dentro da pasta "routes" e em alguns outros arquivos tbm, como por ex o "public/storage/scripts.js" e no "public/ajax.php", que contém todas os ajax utilizados no site.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Aí quando você se loga no sistema com o mesmo login e senha do sistema de vocês, vc vai na página inicial, que contém alguns gráficos que não tem nada haver com o sistema em si, é só pra vcs verem mesmo. Aí tem a página "Cadastros" => "Fornecedores" que é a página que vcs me solicitaram. Ela está bem completa e funcional também. Além disso, reparem que tem o Módulo de "Usuários", que nesse módulo contém 6 sub-menus lá, todos funcionais tbm. Reparem que tudo desse sistema funciona perfeitamente.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+ah eh mesmo, eu não tinha feito a paginação lá. Mas agora está com tudo lá. Só ver aí e qualquer coisa só me falar. Foi adicionada o campo "Registros por página" no filtro lá da página. Aí tem 3 registros na base de dados que foi enviada a vocês. É só modificar o campo "Registros por Página", que começa com 15, para "2" ou "1" lá e fazer os testes. 
 
-## Laravel Sponsors
+Espero que gostem.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Um Grande Abraço.
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Henrique Marcandier
+Desenvolvedor WEB
+Belo Horizonte - 26/06/2023
